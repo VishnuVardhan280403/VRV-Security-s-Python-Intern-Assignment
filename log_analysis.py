@@ -22,7 +22,6 @@ def parse_log(file_path):
             if not ip_match:
                 continue
             ip = ip_match.group(1)
-
             # Count requests per IP
             ip_requests[ip] += 1
 
